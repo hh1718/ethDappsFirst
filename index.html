@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>testdapps</title>
+</head>
+<body>
+    <h2>testdapps</h2>
+<!--アドレスを取得-->
+<div class="form-group">
+<label for="get_Address">[アドレス（テスト用）]:</label>
+<br>
+    <div id="addr"></div>
+</div>
+<!--値をセット-->
+<div class="form-group">
+    <!--コントラクト実行アカウントを入力-->
+    <br>
+    <label for="input_from">[送信用アドレス]：</label>
+    <br>
+    <input type="text" name="input_from" id="input_from" class="form-control">
+    <br><br>
+    <!--パスワードを入力-->
+    <label for="input_pw">[パスワード（送信用アドレス）]：</label>
+    <br>
+    <input type="password" name="input_pw" id="input_pw" class="form-control">
+    <br><br>
+    <!--値を入力-->
+    <label for="input_set_num">[入力値]：</label>
+    <br>
+    <input type="text" name="input_set_num" id="input_set_num" class="form-control">
+    <br>
+</div>
+<br>
+<div class="form-group">
+    <button id="btn_set_num">送信ボタン</button>
+</div>
+<br>
+<!--値を出力-->
+<div class="form-group">
+    <label for="output_get_num">[出力値]：</label>
+    <pre id="output_get_num"></pre>
+    <button id="btn_get_num">取得ボタン</button>
+</div>
+<br>
+<!-- ログ出力 -->
+<div class="form-group-box_logs">
+    <label for="box_logs">ログ情報（送信）：</lavel>
+    <pre id="box_logs_pending"></pre>
+    <label for="box_logs">ログ情報（完了）：</lavel>
+    <pre id="box_logs_complete"></pre>
+</div>
+<!--参照先scriptを記載-->
+<script type="text/javascript" src="./dist/bundle.js"></script>
+</body>
+</html>
